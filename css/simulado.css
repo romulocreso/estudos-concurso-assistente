@@ -74,3 +74,24 @@ h1 em{font-style:italic;color:var(--oxblood);font-weight:500}
 .restart-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
 .btn-sec{font-family:'Spline Sans Mono',monospace;font-size:12px;letter-spacing:.1em;text-transform:uppercase;padding:10px 20px;border-radius:4px;border:1.5px solid var(--oxblood);background:transparent;color:var(--oxblood);cursor:pointer;transition:all .18s}
 .btn-sec:hover{background:var(--oxblood);color:#f6ecd8}
+
+/* ---------- MOBILE ---------- */
+@media(max-width:600px){
+  .start-screen{padding:34px 0 22px}
+  .quiz-screen,.results-screen{padding:24px 0 22px}
+  h1{font-size:clamp(1.9rem,10vw,2.4rem)}
+  .disc-filters{gap:8px}
+  .filter-btn{padding:7px 12px;font-size:11px}
+  .quiz-header{flex-wrap:wrap;gap:10px}
+  .quiz-progress-text{order:1}
+  .quiz-score-badge{order:2;margin-left:auto}
+  .quiz-bar-track{order:3;flex-basis:100%}
+  .q-card{padding:20px 17px}
+  .q-text{font-size:14.5px}
+  .opt-btn{font-size:14px;padding:12px 14px}
+  .result-big{font-size:3.2rem}
+  .result-grid{grid-template-columns:repeat(auto-fit,minmax(140px,1fr))}
+  .btn-primary{width:100%}
+  .restart-row{flex-direction:column}
+  .restart-row .btn-primary,.restart-row .btn-sec{width:100%;text-align:center}
+}

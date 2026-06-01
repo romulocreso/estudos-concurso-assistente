@@ -41,3 +41,16 @@ table.mat{width:100%;border-collapse:collapse;font-size:13.5px;margin:12px 0}
 table.mat th{background:var(--oxblood);color:#f6ecd8;font-family:'Spline Sans Mono',monospace;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;padding:9px 12px;text-align:left}
 table.mat td{padding:9px 12px;border-top:1px solid var(--line);vertical-align:top}
 table.mat tr:nth-child(even) td{background:rgba(234,221,198,.3)}
+
+/* ---------- MOBILE ---------- */
+@media(max-width:600px){
+  header{padding:34px 0 22px;margin-bottom:24px}
+  h1{font-size:clamp(1.9rem,10vw,2.4rem)}
+  .tabs{overflow-x:auto;-webkit-overflow-scrolling:touch;flex-wrap:nowrap}
+  .tab-btn{padding:9px 12px;white-space:nowrap;flex:none}
+  .acc-head{padding:12px 15px}
+  .acc-head h3{font-size:1.05rem}
+  .acc-content{padding:16px 15px 18px}
+  .content-block{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  table.mat{min-width:460px}
+}

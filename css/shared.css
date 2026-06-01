@@ -39,3 +39,11 @@
   .nav-links{display:flex;gap:2px}
   .nav-links a{font-family:'Spline Sans Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:rgba(246,236,216,.7);text-decoration:none;padding:6px 12px;border-radius:4px;transition:all .18s}
   .nav-links a:hover,.nav-links a.active{background:rgba(246,236,216,.15);color:#f6ecd8}
+
+/* ---------- MOBILE ---------- */
+@media(max-width:600px){
+  .wrap{padding-left:16px;padding-right:16px}
+  .nav-inner{padding:0 16px;height:48px}
+  .nav-brand{font-size:.95rem}
+  .nav-links a{padding:6px 9px;font-size:10px;letter-spacing:.08em}
+}
