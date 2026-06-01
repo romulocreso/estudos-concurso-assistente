@@ -167,6 +167,22 @@ q:`Na estrutura constitucional brasileira, é competência EXCLUSIVA do municíp
 opts:["Legislar sobre direito civil e comercial.","Instituir e arrecadar tributos de sua competência e aplicar suas rendas.","Legislar sobre direito do trabalho.","Organizar e manter a polícia civil e militar."],
 ans:1,exp:"Conforme a CF/88, é competência exclusiva dos municípios, entre outras: legislar sobre assuntos de interesse local, suplementar legislação federal/estadual, e instituir e arrecadar os tributos de sua competência (IPTU, ISS, ITBI)."},
 
+/* ==================== CONHECIMENTOS GERAIS — HISTÓRIA DO MUNICÍPIO (IBGE) ==================== */
+{id:79,disc:"cg",topic:"Santana de Cataguases — emancipação",
+q:`O município de Santana de Cataguases (MG) foi elevado à categoria de município, com território desmembrado de Cataguases, pela Lei Estadual nº 2764, de:`,
+opts:["30 de dezembro de 1962","14 de setembro de 1891","27 de dezembro de 1948","1º de março de 1963"],
+ans:0,exp:"Segundo o IBGE, Santana de Cataguases foi elevado a município pela Lei Estadual nº 2764, de 30/12/1962, desmembrado de Cataguases. A instalação do município ocorreu em 01/03/1963; as demais datas referem-se à criação do distrito (1891) e à retificação da grafia (1948)."},
+
+{id:80,disc:"cg",topic:"Santana de Cataguases — origem e gentílico",
+q:`Sobre a origem do município de Santana de Cataguases (MG), é correto afirmar que:`,
+opts:["Surgiu de um arraial formado em torno da capela de Santana, e seu gentílico é 'santanense'.","Foi fundado por imigrantes italianos, e seu gentílico é 'cataguasense'.","Nasceu como sede da capitania de Minas, e seu gentílico é 'mineiro'.","Originou-se de uma colônia agrícola alemã, e seu gentílico é 'santista'."],
+ans:0,exp:"Pelo IBGE, o município teve origem no arraial formado nos arredores da capela de Santana, filiada à matriz de Cataguases. O gentílico do município é 'santanense'."},
+
+{id:81,disc:"cg",topic:"Santana de Cataguases — localização",
+q:`Santana de Cataguases localiza-se no estado de Minas Gerais, na microrregião de Cataguases, pertencente à mesorregião:`,
+opts:["Triângulo Mineiro/Alto Paranaíba","Zona da Mata","Vale do Rio Doce","Sul/Sudoeste de Minas"],
+ans:1,exp:"Santana de Cataguases integra a microrregião de Cataguases, na mesorregião da Zona da Mata mineira, no leste de Minas Gerais, próxima à divisa com o Rio de Janeiro."},
+
 /* ==================== MATEMÁTICA ==================== */
 {id:67,disc:"mat",topic:"Porcentagem",
 q:`Um servidor recebeu um abono de 15% sobre seu salário de R$ 3.000,00. O valor do abono é de:`,
