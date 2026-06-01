@@ -1,4 +1,4 @@
-const DISC_LABELS = {port:"Português", cg:"Conhecimentos Gerais", ce:"Conhecimentos Específicos"};
+const DISC_LABELS = {port:"Português", mat:"Matemática", cg:"Conhecimentos Gerais", ce:"Conhecimentos Específicos"};
 const FONTE_LABEL = "Auctor · Chácara-MG, 2022";
 const LETTERS = ["A","B","C","D"];
 
@@ -167,6 +167,67 @@ q:`Na estrutura constitucional brasileira, é competência EXCLUSIVA do municíp
 opts:["Legislar sobre direito civil e comercial.","Instituir e arrecadar tributos de sua competência e aplicar suas rendas.","Legislar sobre direito do trabalho.","Organizar e manter a polícia civil e militar."],
 ans:1,exp:"Conforme a CF/88, é competência exclusiva dos municípios, entre outras: legislar sobre assuntos de interesse local, suplementar legislação federal/estadual, e instituir e arrecadar os tributos de sua competência (IPTU, ISS, ITBI)."},
 
+/* ==================== MATEMÁTICA ==================== */
+{id:67,disc:"mat",topic:"Porcentagem",
+q:`Um servidor recebeu um abono de 15% sobre seu salário de R$ 3.000,00. O valor do abono é de:`,
+opts:["R$ 300,00","R$ 350,00","R$ 450,00","R$ 600,00"],
+ans:2,exp:"15% de 3.000 = 0,15 × 3.000 = 450. O abono é de R$ 450,00."},
+
+{id:68,disc:"mat",topic:"Acréscimos e descontos",
+q:`Um produto que custava R$ 80,00 teve aumento de 25%. Qual o novo preço?`,
+opts:["R$ 95,00","R$ 100,00","R$ 105,00","R$ 120,00"],
+ans:1,exp:"Aumento de 25% equivale a multiplicar por 1,25: 80 × 1,25 = 100. O novo preço é R$ 100,00."},
+
+{id:69,disc:"mat",topic:"Juros simples",
+q:`Um capital de R$ 2.000,00 foi aplicado a juros simples de 2% ao mês durante 6 meses. Qual o valor dos juros?`,
+opts:["R$ 200,00","R$ 240,00","R$ 120,00","R$ 480,00"],
+ans:1,exp:"Juros simples: J = C·i·t = 2.000 × 0,02 × 6 = 240. Os juros são de R$ 240,00."},
+
+{id:70,disc:"mat",topic:"Juros compostos",
+q:`Qual o montante de R$ 1.000,00 aplicados a juros compostos de 10% ao ano durante 2 anos?`,
+opts:["R$ 1.200,00","R$ 1.210,00","R$ 1.100,00","R$ 1.220,00"],
+ans:1,exp:"Montante composto: M = C(1+i)^t = 1.000 × (1,10)² = 1.000 × 1,21 = 1.210. O montante é R$ 1.210,00."},
+
+{id:71,disc:"mat",topic:"Regra de três",
+q:`Se 4 funcionários organizam um arquivo em 6 dias, quantos dias levarão 8 funcionários, no mesmo ritmo?`,
+opts:["12 dias","3 dias","4 dias","2 dias"],
+ans:1,exp:"Grandezas inversamente proporcionais (mais funcionários, menos dias): 4×6 = 8×x → x = 24/8 = 3 dias."},
+
+{id:72,disc:"mat",topic:"Equação do 1º grau",
+q:`Resolvendo a equação 3x − 7 = 2x + 5, o valor de x é:`,
+opts:["−2","5","12","2"],
+ans:2,exp:"3x − 7 = 2x + 5 → 3x − 2x = 5 + 7 → x = 12."},
+
+{id:73,disc:"mat",topic:"Equação do 2º grau",
+q:`As raízes da equação x² − 5x + 6 = 0 são:`,
+opts:["2 e 3","−2 e −3","1 e 6","−1 e 6"],
+ans:0,exp:"Δ = (−5)² − 4·1·6 = 25 − 24 = 1. x = (5 ± 1)/2 → x = 3 ou x = 2. (Conferindo: soma = 5, produto = 6.)"},
+
+{id:74,disc:"mat",topic:"Função do 1º grau",
+q:`Na função f(x) = 2x + 3, o valor de f(4) é:`,
+opts:["8","11","14","7"],
+ans:1,exp:"f(4) = 2·4 + 3 = 8 + 3 = 11."},
+
+{id:75,disc:"mat",topic:"Progressão aritmética",
+q:`Em uma PA de primeiro termo 5 e razão 4, o quinto termo (a₅) vale:`,
+opts:["17","20","21","25"],
+ans:2,exp:"aₙ = a₁ + (n−1)·r → a₅ = 5 + (5−1)·4 = 5 + 16 = 21."},
+
+{id:76,disc:"mat",topic:"Geometria plana — área",
+q:`Um terreno retangular tem 12 m de comprimento por 8 m de largura. Sua área é:`,
+opts:["20 m²","40 m²","96 m²","48 m²"],
+ans:2,exp:"Área do retângulo = base × altura = 12 × 8 = 96 m²."},
+
+{id:77,disc:"mat",topic:"Estatística — média",
+q:`As notas de um candidato foram 6, 8, 7 e 9. A média aritmética dessas notas é:`,
+opts:["7,0","7,5","8,0","7,75"],
+ans:1,exp:"Média = (6 + 8 + 7 + 9) / 4 = 30 / 4 = 7,5."},
+
+{id:78,disc:"mat",topic:"Probabilidade",
+q:`Ao lançar um dado comum de 6 faces, qual a probabilidade de sair um número maior que 4?`,
+opts:["1/6","1/3","1/2","2/3"],
+ans:1,exp:"Números maiores que 4: 5 e 6 (2 casos favoráveis). P = 2/6 = 1/3."},
+
 /* ==================== QUESTÕES REAIS — AUCTOR CONSULTORIA (Chácara-MG, 2022) ==================== */
 /* Português Q1-Q10 e Conhecimentos Gerais Q11-Q20 extraídos do caderno do Procurador Municipal.     */
 /* Gabarito oficial verificado. Conhecimentos Específicos mantidos como elaborados por cargo.          */
@@ -252,105 +313,80 @@ opts:["Nordeste.","Sudeste.","Norte.","Sul."],
 ans:0,exp:"O Nordeste concentra o maior número de beneficiários de programas de transferência de renda, reflexo dos maiores índices de pobreza e vulnerabilidade da região. Estados como Bahia, Ceará, Maranhão e Pernambuco lideram historicamente o número de famílias beneficiadas."},
 
 /* ==================== CONHECIMENTOS ESPECÍFICOS ==================== */
-{id:31,disc:"ce",topic:"Princípios administrativos — legalidade",
-q:`O princípio da legalidade, para a Administração Pública, significa que:`,
-opts:["O administrador pode fazer tudo que a lei não proibir expressamente.","O administrador só pode agir quando houver expressa autorização legal.","A legalidade aplica-se apenas ao Poder Executivo federal.","Os atos administrativos ilegais geram apenas responsabilidade política."],
-ans:1,exp:"Para o particular, legalidade = pode fazer o que a lei não proíbe. Para a Administração, legalidade = só pode agir com prévia autorização legal. Esse sentido mais restrito é fundamental em provas."},
+{id:31,disc:"ce",topic:"Protocolo e expedição",
+q:`No serviço de protocolo de uma repartição pública, a atividade de receber, registrar e encaminhar documentos aos setores competentes é chamada de:`,
+opts:["Arquivamento permanente","Tramitação (distribuição)","Eliminação","Desclassificação"],
+ans:1,exp:"O protocolo recebe, registra, classifica e distribui (encaminha) os documentos, controlando sua tramitação entre os setores. Arquivamento e eliminação são fases posteriores da gestão documental."},
 
-{id:32,disc:"ce",topic:"Princípios administrativos — LIMPE",
-q:`O princípio da eficiência foi inserido no caput do art. 37 da CF/88 por meio da:`,
-opts:["Emenda Constitucional nº 19/1998 (Reforma Administrativa)","Lei 8.112/1990 (Estatuto dos Servidores Federais)","Emenda Constitucional nº 45/2004 (Reforma do Judiciário)","Lei Complementar nº 101/2000 (Lei de Responsabilidade Fiscal)"],
-ans:0,exp:"A EC 19/1998 (Reforma Administrativa) acrescentou o princípio da eficiência ao art. 37, completando o acrônimo LIMPE: Legalidade, Impessoalidade, Moralidade, Publicidade e Eficiência."},
+{id:32,disc:"ce",topic:"Arquivo — teoria das três idades",
+q:`Os documentos de uso pouco frequente, que aguardam o cumprimento de prazos antes de sua destinação final, pertencem ao arquivo:`,
+opts:["Corrente","Intermediário","Permanente","Setorial"],
+ans:1,exp:"Pela teoria das três idades: arquivo corrente (uso frequente), intermediário (uso esporádico, aguardando destinação) e permanente (valor histórico, guarda definitiva). Os que aguardam prazos estão no intermediário."},
 
-{id:33,disc:"ce",topic:"Atos administrativos — atributos",
-q:`São atributos (características) dos atos administrativos, EXCETO:`,
-opts:["Presunção de legitimidade e veracidade","Imperatividade","Autoexecutoriedade","Irrevogabilidade"],
-ans:3,exp:"Os atributos clássicos são: presunção de legitimidade, imperatividade (impõe obrigações) e autoexecutoriedade (execução direta). A irrevogabilidade NÃO é atributo — a Administração pode revogar atos discricionários por conveniência e oportunidade."},
+{id:33,disc:"ce",topic:"Gestão documental — temporalidade",
+q:`O instrumento que estabelece os prazos de guarda e a destinação final (eliminação ou guarda permanente) dos documentos é a:`,
+opts:["Tabela de temporalidade","Lista de presença","Folha de rosto","Ata de reunião"],
+ans:0,exp:"A tabela de temporalidade documental define, para cada tipo de documento, por quanto tempo deve ser guardado e qual sua destinação final: eliminação ou recolhimento ao arquivo permanente."},
 
-{id:34,disc:"ce",topic:"Poderes administrativos — polícia",
-q:`O poder que permite à Administração aplicar sanções (multas, interdições) sem autorização judicial prévia é o poder:`,
-opts:["Discricionário","Hierárquico","De polícia","Regulamentar"],
-ans:2,exp:"O poder de polícia é a faculdade da Administração de condicionar e restringir atividades particulares em benefício da coletividade. Manifesta-se pela autoexecutoriedade: aplicação direta de sanções sem necessidade do Judiciário."},
+{id:34,disc:"ce",topic:"Redação oficial — princípios",
+q:`Constitui princípio fundamental da redação oficial:`,
+opts:["O uso de linguagem rebuscada e regionalismos.","A impessoalidade e o emprego do padrão culto da língua.","A manifestação de opiniões pessoais do redator.","A informalidade no tratamento das autoridades."],
+ans:1,exp:"A redação oficial pauta-se por impessoalidade, clareza, concisão, formalidade/padronização e uso do padrão culto da língua. Não admite impressões pessoais, gírias ou informalidade."},
 
-{id:35,disc:"ce",topic:"Atos administrativos — vinculado/discricionário",
-q:`O ato administrativo que pode ser revogado pela própria Administração por razões de conveniência e oportunidade é o ato:`,
-opts:["Vinculado","Discricionário","Nulo","Complexo"],
-ans:1,exp:"Atos discricionários conferem ao administrador margem de liberdade (juízo de mérito). Por conterem esse elemento de escolha, são passíveis de revogação pela Administração a qualquer tempo. Atos vinculados, em regra, não admitem revogação."},
+{id:35,disc:"ce",topic:"Documentos oficiais",
+q:`O documento de comunicação oficial utilizado para tratar de assuntos entre órgãos, ou destes com o público externo, é o:`,
+opts:["Ofício","Atestado","Recibo","Edital de leilão"],
+ans:0,exp:"O ofício é o expediente de comunicação oficial entre órgãos públicos e destes com particulares. No Manual de Redação da Presidência, o memorando foi unificado ao padrão ofício."},
 
-{id:36,disc:"ce",topic:"Administração indireta",
-q:`São entidades da Administração Indireta, conforme o Decreto-Lei 200/1967:`,
-opts:["Ministérios, secretarias e departamentos","Autarquias, fundações públicas, empresas públicas e sociedades de economia mista","Câmaras legislativas, tribunais e ministério público","Conselhos de fiscalização profissional e organizações sociais"],
-ans:1,exp:"A Administração Indireta é composta por: autarquias (ex.: INSS), fundações públicas (ex.: IBGE), empresas públicas (ex.: Correios) e sociedades de economia mista (ex.: Petrobras). Todos possuem personalidade jurídica própria."},
+{id:36,disc:"ce",topic:"Formas de tratamento",
+q:`A forma de tratamento adequada e o vocativo correto para dirigir-se a um Vereador são, respectivamente:`,
+opts:["Vossa Senhoria / Caro amigo","Vossa Excelência / Senhor Vereador","Vossa Magnificência / Ilustre","Vossa Reverendíssima / Nobre"],
+ans:1,exp:"Vereadores, como autoridades do Legislativo, recebem o tratamento Vossa Excelência (V. Exa.), com vocativo 'Senhor Vereador,'. Vossa Magnificência é para reitores e Vossa Reverendíssima para sacerdotes."},
 
-{id:37,disc:"ce",topic:"Licitações — Lei 14.133/2021",
-q:`Com a Nova Lei de Licitações (Lei 14.133/2021), qual modalidade prevista na Lei 8.666/1993 foi EXTINTA?`,
-opts:["Pregão","Concorrência","Tomada de preços","Concurso"],
-ans:2,exp:"A Lei 14.133/2021 manteve concorrência, pregão, concurso e leilão, e criou o diálogo competitivo. A tomada de preços (assim como o convite) foi extinta pela nova lei."},
+{id:37,disc:"ce",topic:"Concordância com pronome de tratamento",
+q:`Assinale a frase correta quanto ao emprego do pronome de tratamento:`,
+opts:["Vossa Excelência deveis comparecer à sessão.","Vossa Excelência e vossos assessores estão convidados.","Vossa Excelência e seus assessores estão convidados.","Vossa Excelência precisas assinar o documento."],
+ans:2,exp:"Os pronomes de tratamento concordam com o verbo e os possessivos na 3ª pessoa: 'Vossa Excelência e SEUS assessores ESTÃO convidados'. As demais usam 2ª pessoa (deveis, vossos, precisas), o que é incorreto."},
 
-{id:38,disc:"ce",topic:"Licitações — dispensa",
-q:`Na Lei 14.133/2021, é dispensável a licitação para contratação de obras e serviços de engenharia com valor de até:`,
-opts:["R$ 15.000,00","R$ 50.000,00","R$ 100.000,00","R$ 200.000,00"],
-ans:2,exp:"Conforme o art. 75, I, da Lei 14.133/2021, é dispensável a licitação para obras e serviços de engenharia (e manutenção de veículos) cujo valor não ultrapasse R$ 100.000,00. Para outros bens e serviços, o limite é R$ 50.000,00 (art. 75, II)."},
+{id:38,disc:"ce",topic:"Processo administrativo — autuação",
+q:`No âmbito dos processos administrativos, o ato de registrar, numerar e formar os autos a partir dos documentos recebidos denomina-se:`,
+opts:["Expedição","Autuação","Desarquivamento","Publicação"],
+ans:1,exp:"Autuar é formar os autos do processo: registrar, numerar as folhas e organizar os documentos em uma capa própria, dando início formal à tramitação do processo administrativo."},
 
-{id:39,disc:"ce",topic:"Contratos administrativos — cláusulas exorbitantes",
-q:`A cláusula exorbitante que permite à Administração alterar unilateralmente o objeto do contrato para melhor adequá-lo ao interesse público é denominada:`,
-opts:["Cláusula de rescisão unilateral","Cláusula de aplicação de penalidades","Cláusula de modificação unilateral","Cláusula de encampação"],
-ans:2,exp:"As cláusulas exorbitantes são prerrogativas da AP não usuais no direito privado. A modificação unilateral permite alterar cláusulas para adequar o contrato ao interesse público, respeitado o limite legal (até 25% do valor original para acréscimos/supressões)."},
+{id:39,disc:"ce",topic:"Almoxarifado e controle de estoque",
+q:`O documento por meio do qual um setor solicita a retirada de materiais do almoxarifado é a:`,
+opts:["Nota fiscal","Requisição de material","Tabela de temporalidade","Folha de pagamento"],
+ans:1,exp:"A requisição de material é o documento interno que formaliza o pedido de retirada de itens do almoxarifado, permitindo o controle das saídas e a baixa no estoque."},
 
-{id:40,disc:"ce",topic:"Contratos — rescisão",
-q:`O contrato administrativo pode ser rescindido unilateralmente pela Administração. Assinale a hipótese que NÃO autoriza essa rescisão:`,
-opts:["Inexecução total do contrato pelo contratado","Razões de interesse público devidamente justificadas","Inadimplemento de obrigações pelo contratado","Interesse exclusivo do contratado em encerrar o vínculo"],
-ans:3,exp:"A rescisão unilateral pela Administração só ocorre por ato do poder público (inexecução pelo contratado ou interesse público). Se o interesse é exclusivo do contratado, ele deve buscar via judicial ou negociar amigavelmente — não cabe à Administração rescindir unilateralmente nessa hipótese."},
+{id:40,disc:"ce",topic:"Atendimento ao público",
+q:`Sobre a qualidade no atendimento ao público no serviço administrativo, assinale a alternativa correta:`,
+opts:["O atendente deve priorizar a rapidez, ignorando a clareza das informações.","Idosos, gestantes e pessoas com deficiência têm prioridade legal de atendimento.","O atendimento por telefone dispensa cortesia e atenção.","Informações sigilosas podem ser repassadas a qualquer cidadão que solicitar."],
+ans:1,exp:"A legislação assegura atendimento prioritário a idosos, gestantes, pessoas com deficiência e com crianças de colo. O atendimento de qualidade exige cortesia e clareza em todos os canais, e o sigilo de informações restritas deve ser preservado."},
 
-{id:41,disc:"ce",topic:"Gestão de RH — recrutamento",
-q:`O recrutamento INTERNO, como forma de preenchimento de cargo em uma organização, apresenta como vantagem:`,
-opts:["Introdução de novas ideias e experiências externas à organização.","Renovação da cultura organizacional com perfis distintos.","Motivação dos servidores e aproveitamento do potencial interno.","Ampliação da diversidade de perfis na organização."],
-ans:2,exp:"O recrutamento interno valoriza e motiva os servidores existentes, aproveita o conhecimento que já têm da organização e custa menos. As demais alternativas (A, B, D) descrevem vantagens do recrutamento externo."},
+{id:41,disc:"ce",topic:"Sigilo e acesso à informação",
+q:`De acordo com a Lei de Acesso à Informação (Lei nº 12.527/2011), em regra:`,
+opts:["O sigilo é a regra e o acesso à informação é a exceção.","O acesso à informação pública é a regra e o sigilo, a exceção.","Toda informação pública é sempre sigilosa.","O cidadão deve justificar o motivo do pedido de informação."],
+ans:1,exp:"A LAI consagra a publicidade como regra e o sigilo como exceção. O acesso à informação pública independe de justificativa do solicitante, ressalvadas as hipóteses legais de sigilo."},
 
-{id:42,disc:"ce",topic:"Gestão de RH — seleção",
-q:`A entrevista de seleção ESTRUTURADA, comparada à não estruturada, caracteriza-se por:`,
-opts:["Maior informalidade e liberdade na condução.","Perguntas padronizadas e previamente definidas para todos os candidatos.","Ausência de critérios objetivos de avaliação.","Adaptação total das perguntas ao perfil individual de cada candidato."],
-ans:1,exp:"Na entrevista estruturada, todas as perguntas são definidas previamente e aplicadas igualmente a todos os candidatos, garantindo objetividade, comparabilidade e redução do viés do entrevistador."},
+{id:42,disc:"ce",topic:"Informática — hardware e software",
+q:`Assinale a alternativa que apresenta apenas componentes de hardware:`,
+opts:["Windows, Word e Excel","Memória RAM, teclado e impressora","Navegador, e-mail e planilha","Sistema operacional e antivírus"],
+ans:1,exp:"Hardware é a parte física do computador (memória RAM, teclado, impressora, monitor). Windows, Word, Excel, navegadores e antivírus são softwares (programas)."},
 
-{id:43,disc:"ce",topic:"Gestão de RH — treinamento",
-q:`O Levantamento das Necessidades de Treinamento (LNT) tem como objetivo principal:`,
-opts:["Definir o orçamento disponível para capacitação.","Identificar as lacunas de conhecimento, habilidades e atitudes dos servidores.","Estabelecer o cronograma de férias dos servidores.","Avaliar o desempenho dos gestores responsáveis pelas equipes."],
-ans:1,exp:"O LNT é a etapa diagnóstica do ciclo de treinamento: identifica a diferença entre as competências que os servidores têm e as que o cargo/função exige. A partir daí, planeja-se o treinamento mais adequado."},
+{id:43,disc:"ce",topic:"Informática — MS Excel",
+q:`No MS Excel, a fórmula digitada na célula para somar os valores do intervalo de A1 até A10 é:`,
+opts:["=SOMA(A1:A10)","SOMA A1+A10","=TOTAL(A1-A10)","+A1 ATÉ A10"],
+ans:0,exp:"No Excel, toda fórmula começa com '=' e a soma de um intervalo usa a função SOMA com os limites separados por dois-pontos: =SOMA(A1:A10)."},
 
-{id:44,disc:"ce",topic:"Gestão de RH — avaliação de desempenho",
-q:`A avaliação de desempenho pelo método 360 graus distingue-se dos métodos tradicionais porque:`,
-opts:["É realizada exclusivamente pelo superior hierárquico imediato.","Utiliza apenas critérios quantitativos de produção.","Envolve feedback de múltiplas fontes: superiores, pares, subordinados e autoavaliação.","Aplica-se somente a cargos de chefia e gestão."],
-ans:2,exp:"A avaliação 360º coleta feedback de múltiplas fontes — o próprio avaliado (autoavaliação), superiores, colegas e subordinados — fornecendo uma visão mais completa e fidedigna do desempenho."},
+{id:44,disc:"ce",topic:"Informática — internet e intranet",
+q:`A rede de uso interno e restrito de uma organização, com tecnologia semelhante à da internet, é denominada:`,
+opts:["Extranet pública","Intranet","Provedor","Servidor de impressão"],
+ans:1,exp:"A intranet é a rede interna e restrita de uma organização, usada para comunicação e compartilhamento de informações entre seus membros. A internet, por sua vez, é a rede mundial e pública."},
 
-{id:45,disc:"ce",topic:"Orçamento público — princípios",
-q:`O princípio orçamentário que determina que a LOA deve conter TODAS as receitas e despesas do governo, sem fundos externos ao orçamento, é o princípio da:`,
-opts:["Anualidade","Publicidade","Universalidade","Exclusividade"],
-ans:2,exp:"A universalidade determina que todas as receitas e despesas públicas devem estar incluídas na LOA. Não pode haver fundo ou conta paralela fora do orçamento. (Exclusividade proíbe matéria estranha à previsão de receitas e fixação de despesas.)"},
-
-{id:46,disc:"ce",topic:"PPA / LDO / LOA",
-q:`Na hierarquia orçamentária, a Lei de Diretrizes Orçamentárias (LDO) tem como principal função:`,
-opts:["Detalhar o orçamento de um exercício financeiro.","Estabelecer o planejamento de médio prazo por 4 anos.","Orientar a elaboração da LOA, definindo metas e prioridades fiscais.","Regulamentar os contratos e licitações do poder público."],
-ans:2,exp:"A LDO (art. 165, §2º, CF/88) orienta a elaboração da LOA, estabelecendo metas e prioridades, diretrizes para a política fiscal e condições para transferências. O PPA planeja os 4 anos; a LOA detalha o exercício anual."},
-
-{id:47,disc:"ce",topic:"Lei de Responsabilidade Fiscal",
-q:`A Lei de Responsabilidade Fiscal (LC 101/2000) estabelece que os municípios não podem comprometer mais de ___% da Receita Corrente Líquida com gastos de pessoal:`,
-opts:["50%","54%","60%","70%"],
-ans:2,exp:"O art. 19 da LRF fixa que os municípios não podem gastar mais de 60% da RCL com pessoal (54% para o Executivo municipal + 6% para a Câmara Municipal). É um dos limites mais cobrados em provas."},
-
-{id:48,disc:"ce",topic:"Receita orçamentária",
-q:`As receitas provenientes da cobrança de impostos, taxas e contribuições são classificadas como:`,
-opts:["Receitas de capital","Receitas correntes tributárias","Receitas extraorçamentárias","Receitas de operações de crédito"],
-ans:1,exp:"Receitas tributárias (impostos, taxas, contribuições de melhoria) são subclassificação das receitas correntes — aumentam o patrimônio líquido e não geram obrigação de devolução. Receitas de capital envolvem operações de crédito e alienação de bens."},
-
-{id:49,disc:"ce",topic:"Gestão estratégica",
-q:`O planejamento estratégico de uma organização pública resulta na definição de:`,
-opts:["Procedimentos operacionais padrão para cada setor.","Missão, visão, valores e objetivos estratégicos.","Horários de trabalho e escalas de plantão dos servidores.","Tabelas de vencimentos e planos de cargos e salários."],
-ans:1,exp:"O planejamento estratégico define: missão (razão de ser), visão (onde se quer chegar), valores (princípios) e objetivos estratégicos de longo prazo. Serve de base para o planejamento tático (setorial) e operacional (procedimentos)."},
-
-{id:50,disc:"ce",topic:"Bens públicos",
-q:`São bens de USO ESPECIAL, integrantes do patrimônio público:`,
-opts:["Praças, ruas e rios navegáveis","Prédios de repartições públicas, escolas e hospitais do governo","Terrenos de marinha e terras devolutas","Ilhas fluviais e plataforma continental"],
-ans:1,exp:"Bens de uso especial são destinados ao uso exclusivo da Administração: edifícios de repartições públicas, escolas, hospitais e quartéis. Bens de uso comum (praças, rios) são acessíveis a todos. Bens dominicais (terras devolutas) integram o patrimônio disponível do Estado."}
+{id:45,disc:"ce",topic:"Informática — backup",
+q:`A cópia de segurança de arquivos, feita para permitir a recuperação dos dados em caso de perda ou falha, é conhecida como:`,
+opts:["Download","Backup","Firewall","Spam"],
+ans:1,exp:"Backup é a cópia de segurança dos dados, idealmente guardada em local separado (nuvem ou mídia externa), permitindo restaurar as informações em caso de perda, falha ou ataque."}
 ];
 
 /* ==================== QUIZ LOGIC ==================== */
@@ -359,6 +395,7 @@ let activeDisc = "all";
 
 const DISC_COLORS = {
   port:"Português · Língua Portuguesa",
+  mat:"Matemática",
   cg:"Conhecimentos Gerais",
   ce:"Conhecimentos Específicos"
 };

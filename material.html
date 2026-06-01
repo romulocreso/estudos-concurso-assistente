@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Material de Estudo — Analista Legislativo</title>
+<title>Material de Estudo — Assistente Administrativo</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,500&family=Archivo:wght@400;500;600;700&family=Spline+Sans+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
 
 <nav class="sitenav">
   <div class="nav-inner">
-    <a href="index.html" class="nav-brand">Analista <em>Legislativo</em></a>
+    <a href="index.html" class="nav-brand">Assistente <em>Administrativo</em></a>
     <div class="nav-links">
       <a href="index.html">Painel</a>
       <a href="material.html" class="active">Material</a>
@@ -32,6 +32,7 @@
 
   <div class="tabs">
     <button class="tab-btn active" data-tab="port">Português</button>
+    <button class="tab-btn" data-tab="mat">Matemática</button>
     <button class="tab-btn" data-tab="cg">Conhecimentos Gerais</button>
     <button class="tab-btn" data-tab="ce">Conhecimentos Específicos</button>
   </div>
@@ -289,6 +290,149 @@
 
   </div><!-- /tab-port -->
 
+  <!-- ==================== MATEMÁTICA ==================== -->
+  <div class="tab-panel" id="tab-mat">
+
+    <div class="acc open">
+      <div class="acc-head"><span class="chev">▼</span><h3>Porcentagem e Matemática Financeira</h3><span class="badge">muito cobrado</span></div>
+      <div class="acc-body"><div class="acc-content">
+        <div class="content-block">
+          <div class="topic-title">Porcentagem</div>
+          <ul>
+            <li><strong>x% de um valor:</strong> multiplique pela fração decimal — 15% de 200 = 0,15 × 200 = 30</li>
+            <li><strong>Acréscimo de x%:</strong> multiplique por (1 + x/100) — aumento de 10% → × 1,10</li>
+            <li><strong>Desconto de x%:</strong> multiplique por (1 − x/100) — desconto de 20% → × 0,80</li>
+            <li><strong>Aumentos/descontos sucessivos</strong> NÃO se somam: +10% e depois −10% → 1,10 × 0,90 = 0,99 (perde 1%)</li>
+          </ul>
+          <div class="topic-title" style="margin-top:14px">Lucro e prejuízo</div>
+          <ul>
+            <li><strong>Lucro sobre o custo:</strong> L = (Venda − Custo) / Custo</li>
+            <li><strong>Lucro sobre a venda:</strong> L = (Venda − Custo) / Venda</li>
+          </ul>
+          <div class="topic-title" style="margin-top:14px">Juros simples × juros compostos</div>
+          <table class="mat">
+            <thead><tr><th>Tipo</th><th>Fórmula</th><th>Característica</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Simples</strong></td><td>J = C · i · t &nbsp;|&nbsp; M = C(1 + i·t)</td><td>Juros sempre sobre o capital inicial (crescimento linear)</td></tr>
+              <tr><td><strong>Composto</strong></td><td>M = C(1 + i)<sup>t</sup></td><td>Juros sobre juros (crescimento exponencial)</td></tr>
+            </tbody>
+          </table>
+          <div class="note">C = capital, i = taxa (em decimal), t = tempo, J = juros, M = montante. A taxa e o tempo devem estar na <strong>mesma unidade</strong> (ex.: taxa ao mês com tempo em meses).</div>
+        </div>
+      </div></div>
+    </div>
+
+    <div class="acc">
+      <div class="acc-head"><span class="chev">▼</span><h3>Razão, Proporção e Regra de Três</h3><span class="badge">cobrado</span></div>
+      <div class="acc-body"><div class="acc-content">
+        <div class="content-block">
+          <ul>
+            <li><strong>Razão:</strong> comparação entre duas grandezas por divisão (a/b)</li>
+            <li><strong>Proporção:</strong> igualdade entre duas razões (a/b = c/d) → propriedade fundamental: a·d = b·c</li>
+            <li><strong>Regra de três simples direta:</strong> grandezas aumentam juntas — monte a proporção e multiplique em cruz</li>
+            <li><strong>Regra de três simples inversa:</strong> uma aumenta e a outra diminui (ex.: mais operários, menos tempo) — inverta uma das razões</li>
+            <li><strong>Regra de três composta:</strong> três ou mais grandezas; analise cada uma como direta ou inversa em relação à incógnita</li>
+          </ul>
+        </div>
+      </div></div>
+    </div>
+
+    <div class="acc">
+      <div class="acc-head"><span class="chev">▼</span><h3>Equações e Funções (1º e 2º graus)</h3><span class="badge">base</span></div>
+      <div class="acc-body"><div class="acc-content">
+        <div class="content-block">
+          <div class="topic-title">Equação do 1º grau</div>
+          <p>Forma ax + b = 0 (a ≠ 0) → x = −b/a. Resolve-se isolando a incógnita.</p>
+          <div class="topic-title" style="margin-top:14px">Equação do 2º grau — Bhaskara</div>
+          <p>ax² + bx + c = 0 → Δ = b² − 4ac &nbsp;e&nbsp; x = (−b ± √Δ) / 2a</p>
+          <ul>
+            <li>Δ &gt; 0 → duas raízes reais distintas</li>
+            <li>Δ = 0 → uma raiz real (dupla)</li>
+            <li>Δ &lt; 0 → não há raiz real</li>
+            <li><strong>Soma das raízes:</strong> −b/a &nbsp;|&nbsp; <strong>Produto:</strong> c/a</li>
+          </ul>
+          <div class="topic-title" style="margin-top:14px">Funções</div>
+          <table class="mat">
+            <thead><tr><th>Função</th><th>Forma</th><th>Gráfico</th></tr></thead>
+            <tbody>
+              <tr><td>1º grau (afim)</td><td>f(x) = ax + b</td><td>Reta; a = inclinação, b = onde corta o eixo y</td></tr>
+              <tr><td>2º grau (quadrática)</td><td>f(x) = ax² + bx + c</td><td>Parábola; concavidade para cima se a &gt; 0; vértice em x = −b/2a</td></tr>
+              <tr><td>Exponencial</td><td>f(x) = a<sup>x</sup></td><td>Crescente se a &gt; 1; decrescente se 0 &lt; a &lt; 1</td></tr>
+              <tr><td>Logarítmica</td><td>f(x) = log<sub>a</sub> x</td><td>Inversa da exponencial</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div></div>
+    </div>
+
+    <div class="acc">
+      <div class="acc-head"><span class="chev">▼</span><h3>Progressões (PA e PG)</h3><span class="badge">cobrado</span></div>
+      <div class="acc-body"><div class="acc-content">
+        <div class="content-block">
+          <table class="mat">
+            <thead><tr><th>—</th><th>PA (aritmética)</th><th>PG (geométrica)</th></tr></thead>
+            <tbody>
+              <tr><td>Definição</td><td>Soma uma razão fixa <em>r</em></td><td>Multiplica por uma razão fixa <em>q</em></td></tr>
+              <tr><td>Termo geral</td><td>a<sub>n</sub> = a<sub>1</sub> + (n−1)·r</td><td>a<sub>n</sub> = a<sub>1</sub> · q<sup>n−1</sup></td></tr>
+              <tr><td>Soma dos n termos</td><td>S<sub>n</sub> = (a<sub>1</sub> + a<sub>n</sub>)·n / 2</td><td>S<sub>n</sub> = a<sub>1</sub>·(q<sup>n</sup> − 1)/(q − 1)</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div></div>
+    </div>
+
+    <div class="acc">
+      <div class="acc-head"><span class="chev">▼</span><h3>Geometria Plana e Trigonometria</h3><span class="badge">cobrado</span></div>
+      <div class="acc-body"><div class="acc-content">
+        <div class="content-block">
+          <div class="topic-title">Áreas das principais figuras</div>
+          <table class="mat">
+            <thead><tr><th>Figura</th><th>Área</th><th>Perímetro</th></tr></thead>
+            <tbody>
+              <tr><td>Quadrado</td><td>l²</td><td>4l</td></tr>
+              <tr><td>Retângulo</td><td>b · h</td><td>2(b + h)</td></tr>
+              <tr><td>Triângulo</td><td>(b · h) / 2</td><td>soma dos lados</td></tr>
+              <tr><td>Círculo</td><td>π · r²</td><td>2 · π · r (comprimento)</td></tr>
+            </tbody>
+          </table>
+          <div class="topic-title" style="margin-top:14px">Triângulo retângulo</div>
+          <ul>
+            <li><strong>Teorema de Pitágoras:</strong> hipotenusa² = cateto² + cateto²</li>
+            <li><strong>seno</strong> = cateto oposto / hipotenusa</li>
+            <li><strong>cosseno</strong> = cateto adjacente / hipotenusa</li>
+            <li><strong>tangente</strong> = cateto oposto / cateto adjacente</li>
+          </ul>
+          <table class="mat" style="margin-top:10px">
+            <thead><tr><th>Ângulo</th><th>30°</th><th>45°</th><th>60°</th></tr></thead>
+            <tbody>
+              <tr><td>seno</td><td>1/2</td><td>√2/2</td><td>√3/2</td></tr>
+              <tr><td>cosseno</td><td>√3/2</td><td>√2/2</td><td>1/2</td></tr>
+              <tr><td>tangente</td><td>√3/3</td><td>1</td><td>√3</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div></div>
+    </div>
+
+    <div class="acc">
+      <div class="acc-head"><span class="chev">▼</span><h3>Estatística e Probabilidade</h3><span class="badge">cobrado</span></div>
+      <div class="acc-body"><div class="acc-content">
+        <div class="content-block">
+          <div class="topic-title">Medidas estatísticas</div>
+          <ul>
+            <li><strong>Média aritmética:</strong> soma dos valores ÷ quantidade de valores</li>
+            <li><strong>Mediana:</strong> valor central com os dados em ordem (se par, média dos dois centrais)</li>
+            <li><strong>Moda:</strong> valor que mais se repete</li>
+          </ul>
+          <div class="topic-title" style="margin-top:14px">Probabilidade</div>
+          <p>P(evento) = casos favoráveis / casos possíveis. Resultado sempre entre 0 e 1 (ou 0% a 100%).</p>
+          <div class="note">Ex.: ao lançar um dado, P(número par) = 3/6 = 1/2 = 50%.</div>
+        </div>
+      </div></div>
+    </div>
+
+  </div><!-- /tab-mat -->
+
   <!-- ==================== CONHECIMENTOS GERAIS ==================== -->
   <div class="tab-panel" id="tab-cg">
 
@@ -419,234 +563,168 @@
 
   <!-- ==================== CONHECIMENTOS ESPECÍFICOS ==================== -->
   <div class="tab-panel" id="tab-ce">
-
     <div class="acc open">
-      <div class="acc-head"><span class="chev">▼</span><h3>Princípios da Administração Pública — LIMPE</h3><span class="badge">fundamental</span></div>
+      <div class="acc-head"><span class="chev">▼</span><h3>Protocolo, Expedição e Arquivo</h3><span class="badge">fundamental</span></div>
+      <div class="acc-body"><div class="acc-content">
+        <div class="content-block">
+          <div class="topic-title">Protocolo e expedição</div>
+          <ul>
+            <li><strong>Protocolo:</strong> setor responsável por receber, registrar, autuar, distribuir e controlar a tramitação de documentos</li>
+            <li>Rotinas: recebimento → registro/numeração → classificação → distribuição → controle de tramitação → expedição</li>
+            <li><strong>Expedição:</strong> envio de documentos a destinatários internos ou externos, com registro de saída</li>
+          </ul>
+          <div class="topic-title" style="margin-top:14px">Arquivo — ciclo de vida dos documentos (teoria das três idades)</div>
+          <table class="mat">
+            <thead><tr><th>Fase</th><th>Característica</th><th>Uso</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Corrente</strong></td><td>Documentos em uso frequente</td><td>Consulta constante; ficam no setor que os produziu</td></tr>
+              <tr><td><strong>Intermediário</strong></td><td>Uso pouco frequente; aguardam prazo</td><td>Aguardam destinação final (guarda ou eliminação)</td></tr>
+              <tr><td><strong>Permanente</strong></td><td>Valor histórico/probatório</td><td>Guarda definitiva; não podem ser eliminados</td></tr>
+            </tbody>
+          </table>
+          <div class="note"><strong>Tabela de temporalidade:</strong> instrumento que define os prazos de guarda e a destinação final (eliminação ou guarda permanente) de cada tipo de documento.</div>
+          <div class="topic-title" style="margin-top:14px">Classificação de documentos</div>
+          <ul>
+            <li><strong>Quanto ao gênero:</strong> textual, cartográfico, iconográfico, informático etc.</li>
+            <li><strong>Quanto à natureza:</strong> ostensivo (acesso livre) ou sigiloso (acesso restrito)</li>
+            <li><strong>Métodos de arquivamento:</strong> alfabético, numérico, cronológico, geográfico, por assunto</li>
+          </ul>
+        </div>
+      </div></div>
+    </div>
+
+    <div class="acc">
+      <div class="acc-head"><span class="chev">▼</span><h3>Correspondência e Redação Oficial</h3><span class="badge">muito cobrado</span></div>
+      <div class="acc-body"><div class="acc-content">
+        <div class="content-block">
+          <div class="topic-title">Princípios da redação oficial</div>
+          <ul>
+            <li><strong>Clareza e concisão:</strong> texto direto, sem ambiguidade nem excessos</li>
+            <li><strong>Impessoalidade:</strong> ausência de impressões pessoais; foco no interesse público</li>
+            <li><strong>Formalidade e padronização:</strong> uniformidade, polidez e respeito às normas</li>
+            <li><strong>Uso do padrão culto da língua:</strong> norma gramatical, sem gírias ou regionalismos</li>
+          </ul>
+          <div class="topic-title" style="margin-top:14px">Principais expedientes</div>
+          <table class="mat">
+            <thead><tr><th>Documento</th><th>Finalidade</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Ofício</strong></td><td>Comunicação oficial, em geral entre órgãos ou ao público externo</td></tr>
+              <tr><td><strong>Memorando / C.I.</strong></td><td>Comunicação interna entre setores do mesmo órgão (atualmente unificado como "ofício")</td></tr>
+              <tr><td><strong>Requerimento</strong></td><td>Solicitação formal de algo a uma autoridade</td></tr>
+              <tr><td><strong>Ata</strong></td><td>Registro fiel do que ocorreu em uma reunião ou sessão</td></tr>
+              <tr><td><strong>Portaria</strong></td><td>Ato pelo qual a autoridade baixa instruções e nomeações</td></tr>
+            </tbody>
+          </table>
+          <div class="note">O <strong>padrão ofício</strong> reúne os elementos: tipo e número do documento, local e data, endereçamento, assunto, texto, fecho (Atenciosamente / Respeitosamente) e assinatura.</div>
+        </div>
+      </div></div>
+    </div>
+
+    <div class="acc">
+      <div class="acc-head"><span class="chev">▼</span><h3>Formas de Tratamento</h3><span class="badge">cobrado</span></div>
       <div class="acc-body"><div class="acc-content">
         <div class="content-block">
           <table class="mat">
-            <thead><tr><th>Princípio</th><th>Conteúdo</th><th>Ponto de atenção em prova</th></tr></thead>
+            <thead><tr><th>Autoridade</th><th>Tratamento</th><th>Vocativo</th></tr></thead>
             <tbody>
-              <tr><td><strong>Legalidade</strong></td><td>AP só age com prévia autorização legal</td><td>≠ do particular (que pode tudo que lei não proíbe)</td></tr>
-              <tr><td><strong>Impessoalidade</strong></td><td>Atos visam ao interesse público, sem favorecimento</td><td>Veda promoção pessoal; ato é da AP, não do agente</td></tr>
-              <tr><td><strong>Moralidade</strong></td><td>Ética, probidade, boa-fé na atuação</td><td>Distinto da moralidade comum; é jurídica e exigível</td></tr>
-              <tr><td><strong>Publicidade</strong></td><td>Transparência; atos devem ser divulgados</td><td>Exceções legais: segurança nacional, intimidade</td></tr>
-              <tr><td><strong>Eficiência</strong></td><td>Melhores resultados com menor custo</td><td>Inserido pela EC 19/1998</td></tr>
+              <tr><td>Vereadores, autoridades em geral</td><td>Vossa Excelência (V. Exa.)</td><td>Senhor Vereador,</td></tr>
+              <tr><td>Juízes</td><td>Vossa Excelência (V. Exa.)</td><td>Senhor Juiz, / Meritíssimo</td></tr>
+              <tr><td>Reitores de universidade</td><td>Vossa Magnificência</td><td>Magnífico Reitor,</td></tr>
+              <tr><td>Autoridades religiosas (sacerdotes)</td><td>Vossa Reverendíssima</td><td>Reverendo,</td></tr>
+              <tr><td>Demais casos (uso geral)</td><td>Vossa Senhoria (V. Sa.)</td><td>Senhor / Senhora,</td></tr>
             </tbody>
           </table>
+          <div class="alert"><strong>Atenção:</strong> os pronomes de tratamento concordam com o verbo na <strong>3ª pessoa</strong> ("Vossa Excelência <em>aprovou</em>"). Os possessivos também ficam na 3ª pessoa ("Vossa Excelência e <em>seus</em> assessores").</div>
         </div>
       </div></div>
     </div>
 
     <div class="acc">
-      <div class="acc-head"><span class="chev">▼</span><h3>Atos Administrativos</h3><span class="badge">muito cobrado</span></div>
+      <div class="acc-head"><span class="chev">▼</span><h3>Processos Administrativos e Gestão de Material</h3><span class="badge">cobrado</span></div>
       <div class="acc-body"><div class="acc-content">
         <div class="content-block">
-          <div class="topic-title">Elementos (requisitos de validade)</div>
+          <div class="topic-title">Processos administrativos</div>
           <ul>
-            <li><strong>Competência:</strong> agente legalmente habilitado para praticar o ato</li>
-            <li><strong>Finalidade:</strong> interesse público (desvio = abuso de poder)</li>
-            <li><strong>Forma:</strong> modo de exteriorização previsto em lei</li>
-            <li><strong>Motivo:</strong> fundamento de fato e de direito que justifica o ato</li>
-            <li><strong>Objeto:</strong> conteúdo / efeito jurídico produzido</li>
+            <li><strong>Formação:</strong> reunião ordenada de documentos para uma finalidade comum</li>
+            <li><strong>Autuação:</strong> ato de registrar e numerar o processo, formando os autos (capa, numeração de folhas)</li>
+            <li><strong>Tramitação:</strong> movimentação do processo entre os setores, com registro de cada passagem</li>
           </ul>
-          <div class="topic-title" style="margin-top:14px">Atributos</div>
+          <div class="topic-title" style="margin-top:14px">Gestão de material e almoxarifado</div>
           <ul>
-            <li><strong>Presunção de legitimidade e veracidade:</strong> presume-se legal até prova em contrário (invertendo o ônus)</li>
-            <li><strong>Imperatividade:</strong> impõe obrigações independentemente do consentimento do particular</li>
-            <li><strong>Autoexecutoriedade:</strong> pode ser executado diretamente sem autorização judicial</li>
-            <li><strong>Tipicidade:</strong> correspondência a tipos legais previstos (doutrina moderna)</li>
-          </ul>
-          <div class="topic-title" style="margin-top:14px">Extinção</div>
-          <ul>
-            <li><strong>Revogação:</strong> por razões de conveniência/oportunidade; só para atos discricionários; efeitos ex nunc (não retroage)</li>
-            <li><strong>Anulação:</strong> por ilegalidade; realizada pela AP ou pelo Judiciário; efeitos ex tunc (retroage)</li>
+            <li><strong>Almoxarifado:</strong> local de guarda e controle dos materiais de consumo da instituição</li>
+            <li><strong>Controle de estoque:</strong> registro de entradas e saídas; ponto de pedido para reposição</li>
+            <li><strong>Requisição:</strong> documento que solicita a retirada de material do estoque</li>
+            <li><strong>Inventário:</strong> contagem física periódica para conferir o estoque registrado</li>
+            <li>Métodos de avaliação de estoque: PEPS (primeiro que entra, primeiro que sai) e UEPS</li>
           </ul>
         </div>
       </div></div>
     </div>
 
     <div class="acc">
-      <div class="acc-head"><span class="chev">▼</span><h3>Poderes Administrativos</h3><span class="badge">cobrado</span></div>
+      <div class="acc-head"><span class="chev">▼</span><h3>Atendimento ao Público, Ética e Postura</h3><span class="badge">cobrado</span></div>
       <div class="acc-body"><div class="acc-content">
         <div class="content-block">
+          <div class="topic-title">Qualidade no atendimento ao público</div>
+          <ul>
+            <li>Cortesia, presteza, atenção e respeito ao cidadão (princípio da eficiência)</li>
+            <li>Comunicação clara e linguagem acessível; escuta ativa</li>
+            <li>Atendimento presencial, telefônico e por meios eletrônicos com o mesmo padrão de qualidade</li>
+            <li>Prioridade legal a idosos, gestantes, pessoas com deficiência e com crianças de colo</li>
+          </ul>
+          <div class="topic-title" style="margin-top:14px">Imagem, sigilo e postura profissional</div>
+          <ul>
+            <li><strong>A imagem do servidor</strong> reflete a imagem da instituição: apresentação, pontualidade e discrição</li>
+            <li><strong>Sigilo funcional:</strong> dever de guardar segredo sobre informações de acesso restrito (Lei de Acesso à Informação — Lei 12.527/2011 garante o acesso à informação como regra e o sigilo como exceção)</li>
+            <li><strong>Ética profissional:</strong> agir com honestidade, impessoalidade e respeito ao interesse público</li>
+          </ul>
+        </div>
+      </div></div>
+    </div>
+
+    <div class="acc">
+      <div class="acc-head"><span class="chev">▼</span><h3>Noções de Informática</h3><span class="badge">muito cobrado</span></div>
+      <div class="acc-body"><div class="acc-content">
+        <div class="content-block">
+          <div class="topic-title">Hardware e software</div>
+          <ul>
+            <li><strong>Hardware:</strong> parte física (CPU, memória RAM, HD/SSD, teclado, monitor, impressora)</li>
+            <li><strong>Software:</strong> programas — <em>básico/sistema operacional</em> (Windows) e <em>aplicativos</em> (Word, Excel, navegadores)</li>
+            <li><strong>Memória RAM</strong> é volátil (perde dados ao desligar); <strong>HD/SSD</strong> é armazenamento permanente</li>
+          </ul>
+          <div class="topic-title" style="margin-top:14px">Windows 10 — organização de arquivos</div>
+          <ul>
+            <li><strong>Pastas (diretórios):</strong> organizam arquivos hierarquicamente; o Explorador de Arquivos navega entre elas</li>
+            <li>Extensões comuns: .docx (Word), .xlsx (Excel), .pdf, .jpg, .txt</li>
+            <li><strong>Backup (cópia de segurança):</strong> cópia de dados para recuperação em caso de perda; ideal em local separado (nuvem, HD externo)</li>
+          </ul>
+          <div class="topic-title" style="margin-top:14px">Atalhos essenciais (Word/Excel/Windows)</div>
           <table class="mat">
-            <thead><tr><th>Poder</th><th>Finalidade</th><th>Exemplo</th></tr></thead>
+            <thead><tr><th>Atalho</th><th>Ação</th></tr></thead>
             <tbody>
-              <tr><td>Vinculado</td><td>Ato sem margem de escolha; todos os elementos são definidos em lei</td><td>Concessão de aposentadoria por lei</td></tr>
-              <tr><td>Discricionário</td><td>Margem de conveniência e oportunidade (mérito)</td><td>Autorização de funcionamento de estabelecimento</td></tr>
-              <tr><td>Hierárquico</td><td>Organizar, coordenar, controlar, delegar</td><td>Chefe delega competência a subordinado</td></tr>
-              <tr><td>Disciplinar</td><td>Aplicar sanções a servidores e contratados</td><td>Advertência, suspensão, demissão de servidor</td></tr>
-              <tr><td>Regulamentar</td><td>Editar normas gerais para execução das leis</td><td>Decreto presidencial / municipal</td></tr>
-              <tr><td>De polícia</td><td>Restringir atividades particulares em prol do interesse coletivo</td><td>Multa de trânsito, interdição sanitária</td></tr>
+              <tr><td>Ctrl + C / Ctrl + V</td><td>Copiar / Colar</td></tr>
+              <tr><td>Ctrl + X / Ctrl + Z</td><td>Recortar / Desfazer</td></tr>
+              <tr><td>Ctrl + B / Ctrl + S</td><td>Salvar (Word PT) / Salvar (Excel/Windows)</td></tr>
+              <tr><td>Ctrl + N / Ctrl + I / Ctrl + S</td><td>Negrito / Itálico / Sublinhado (no Word)</td></tr>
+              <tr><td>Ctrl + P</td><td>Imprimir</td></tr>
             </tbody>
           </table>
-        </div>
-      </div></div>
-    </div>
-
-    <div class="acc">
-      <div class="acc-head"><span class="chev">▼</span><h3>Licitações — Lei 14.133/2021</h3><span class="badge">muito cobrado</span></div>
-      <div class="acc-body"><div class="acc-content">
-        <div class="content-block">
-          <div class="topic-title">Modalidades</div>
-          <table class="mat">
-            <thead><tr><th>Modalidade</th><th>Uso</th></tr></thead>
-            <tbody>
-              <tr><td>Pregão</td><td>Bens e serviços comuns (especificados por padrão de desempenho/qualidade)</td></tr>
-              <tr><td>Concorrência</td><td>Obras, serviços especiais, grandes valores; qualquer objeto</td></tr>
-              <tr><td>Concurso</td><td>Trabalho técnico, científico ou artístico (escolha por melhor técnica)</td></tr>
-              <tr><td>Leilão</td><td>Alienação de bens e concessões</td></tr>
-              <tr><td>Diálogo competitivo</td><td>Contratos inovadores quando AP não sabe definir solução técnica adequada</td></tr>
-            </tbody>
-          </table>
-          <div class="topic-title" style="margin-top:14px">Dispensa e inexigibilidade</div>
+          <div class="topic-title" style="margin-top:14px">MS Excel — planilhas</div>
           <ul>
-            <li><strong>Dispensa de licitação:</strong> licitação seria possível, mas a lei autoriza dispensar (ex.: valores baixos, emergência)</li>
-            <li>Obras/engenharia: até <strong>R$ 100.000</strong> | Outros bens/serviços: até <strong>R$ 50.000</strong></li>
-            <li><strong>Inexigibilidade:</strong> competição impossível (fornecedor exclusivo, artista consagrado, serviços técnicos singulares)</li>
+            <li>Toda fórmula começa com <strong>=</strong> &nbsp;(ex.: =A1+B1)</li>
+            <li><strong>=SOMA(A1:A10)</strong> soma um intervalo; <strong>=MÉDIA( )</strong>, <strong>=MÁXIMO( )</strong>, <strong>=MÍNIMO( )</strong>, <strong>=SE( )</strong></li>
+            <li>Célula = cruzamento de coluna (letra) e linha (número), ex.: B3</li>
           </ul>
-          <div class="alert"><strong>Atenção:</strong> a tomada de preços e o convite foram EXTINTOS pela Lei 14.133/2021.</div>
-        </div>
-      </div></div>
-    </div>
-
-    <div class="acc">
-      <div class="acc-head"><span class="chev">▼</span><h3>Contratos Administrativos</h3><span class="badge">cobrado</span></div>
-      <div class="acc-body"><div class="acc-content">
-        <div class="content-block">
-          <div class="topic-title">Cláusulas exorbitantes (prerrogativas da AP)</div>
+          <div class="topic-title" style="margin-top:14px">Internet, intranet e correio eletrônico</div>
           <ul>
-            <li><strong>Modificação unilateral:</strong> pode alterar qualidade ou quantidade do objeto (até 25% para acréscimos/supressões)</li>
-            <li><strong>Rescisão unilateral:</strong> por inexecução do contratado ou interesse público</li>
-            <li><strong>Fiscalização:</strong> direito de acompanhar a execução contratual</li>
-            <li><strong>Aplicação de penalidades:</strong> advertência, multa, suspensão, declaração de inidoneidade</li>
-            <li><strong>Ocupação provisória:</strong> de pessoal e bens do contratado em caso de urgência</li>
-          </ul>
-          <div class="topic-title" style="margin-top:14px">Equilíbrio econômico-financeiro</div>
-          <p>A AP deve manter a equação econômica inicial do contrato. Se houver desequilíbrio por fatos supervenientes alheios às partes (teoria da imprevisão / áleas econômicas extraordinárias), cabe revisão.</p>
-        </div>
-      </div></div>
-    </div>
-
-    <div class="acc">
-      <div class="acc-head"><span class="chev">▼</span><h3>Administração de Recursos Humanos</h3><span class="badge">cobrado</span></div>
-      <div class="acc-body"><div class="acc-content">
-        <div class="content-block">
-          <div class="topic-title">Recrutamento</div>
-          <ul>
-            <li><strong>Interno:</strong> busca dentro da organização (promoção, transferência) — motiva, barato, aproveita potencial interno</li>
-            <li><strong>Externo:</strong> busca no mercado de trabalho — traz novas ideias, renova a cultura, mas custa mais</li>
-          </ul>
-          <div class="topic-title" style="margin-top:14px">Seleção</div>
-          <ul>
-            <li><strong>Entrevista estruturada:</strong> perguntas padronizadas para todos; mais objetiva e comparável</li>
-            <li><strong>Entrevista não estruturada:</strong> livre; mais flexível, porém com maior risco de viés</li>
-            <li><strong>Testes cognitivos:</strong> raciocínio lógico, verbal, numérico</li>
-            <li><strong>Testes de personalidade:</strong> identificação de traços como liderança, estabilidade emocional</li>
-          </ul>
-          <div class="topic-title" style="margin-top:14px">Treinamento — Ciclo</div>
-          <ol style="padding-left:20px">
-            <li><strong>LNT</strong> (Levantamento das Necessidades): diagnóstico das lacunas CHA (Conhecimento, Habilidade, Atitude)</li>
-            <li><strong>Planejamento:</strong> definição de objetivos, métodos, público e cronograma</li>
-            <li><strong>Execução:</strong> aplicação do programa</li>
-            <li><strong>Avaliação</strong> (Kirkpatrick): Reação → Aprendizado → Comportamento → Resultados</li>
-          </ol>
-          <div class="topic-title" style="margin-top:14px">Avaliação de Desempenho</div>
-          <ul>
-            <li><strong>Escala gráfica:</strong> grade de critérios com notas; simples mas pode ser subjetivo</li>
-            <li><strong>360°:</strong> múltiplas fontes (superior, pares, subordinados, autoavaliação); visão completa</li>
-            <li><strong>Por objetivos (APO):</strong> metas acordadas entre gestor e servidor; foco em resultados</li>
-            <li><strong>BARS:</strong> ancoragem em comportamentos específicos; maior objetividade</li>
+            <li><strong>Internet:</strong> rede mundial pública; <strong>intranet:</strong> rede interna e restrita de uma organização</li>
+            <li><strong>Navegadores:</strong> Chrome, Edge, Firefox — acessam páginas via endereço (URL)</li>
+            <li><strong>Webmail:</strong> correio eletrônico acessado pelo navegador (Gmail, Outlook); atenção a anexos e phishing</li>
           </ul>
         </div>
       </div></div>
     </div>
 
-    <div class="acc">
-      <div class="acc-head"><span class="chev">▼</span><h3>Orçamento Público e Ciclo Orçamentário</h3><span class="badge">muito cobrado</span></div>
-      <div class="acc-body"><div class="acc-content">
-        <div class="content-block">
-          <div class="topic-title">Instrumentos de planejamento</div>
-          <table class="mat">
-            <thead><tr><th>Instrumento</th><th>Prazo</th><th>Conteúdo</th></tr></thead>
-            <tbody>
-              <tr><td><strong>PPA</strong></td><td>4 anos</td><td>Diretrizes, objetivos e metas de médio prazo; programas governamentais</td></tr>
-              <tr><td><strong>LDO</strong></td><td>1 ano (orienta o seguinte)</td><td>Metas fiscais, prioridades, condições para elaboração da LOA</td></tr>
-              <tr><td><strong>LOA</strong></td><td>1 ano (exercício financeiro)</td><td>Orçamento detalhado: previsão de receitas + fixação de despesas</td></tr>
-            </tbody>
-          </table>
-          <div class="topic-title" style="margin-top:14px">Princípios orçamentários</div>
-          <ul>
-            <li><strong>Anualidade:</strong> vigência de 1 ano (1º jan a 31 dez)</li>
-            <li><strong>Unidade/Totalidade:</strong> um único documento orçamentário</li>
-            <li><strong>Universalidade:</strong> todas receitas e despesas no orçamento</li>
-            <li><strong>Exclusividade:</strong> LOA só trata de receitas e despesas (veda normas estranhas)</li>
-            <li><strong>Equilíbrio:</strong> receitas = despesas (objetivo; não obrigatório constitucionalmente)</li>
-          </ul>
-          <div class="topic-title" style="margin-top:14px">Classificação das receitas</div>
-          <ul>
-            <li><strong>Correntes:</strong> tributárias, contribuições, patrimoniais, agropecuárias, de serviços, transferências → não geram obrigação de devolução</li>
-            <li><strong>De capital:</strong> operações de crédito, alienações, amortizações recebidas → origem em mutação patrimonial</li>
-          </ul>
-        </div>
-      </div></div>
-    </div>
-
-    <div class="acc">
-      <div class="acc-head"><span class="chev">▼</span><h3>Lei de Responsabilidade Fiscal (LC 101/2000)</h3><span class="badge">muito cobrado</span></div>
-      <div class="acc-body"><div class="acc-content">
-        <div class="content-block">
-          <ul>
-            <li>Estabelece normas de finanças públicas para <strong>responsabilidade na gestão fiscal</strong></li>
-            <li>Pilares: planejamento, transparência, controle e responsabilização</li>
-          </ul>
-          <div class="topic-title" style="margin-top:14px">Limites de gastos com pessoal (% da RCL)</div>
-          <table class="mat">
-            <thead><tr><th>Ente</th><th>Limite total</th><th>Executivo</th><th>Legislativo</th></tr></thead>
-            <tbody>
-              <tr><td>União</td><td>50%</td><td>40,9%</td><td>2,5%</td></tr>
-              <tr><td>Estados</td><td>60%</td><td>49%</td><td>3%</td></tr>
-              <tr><td><strong>Municípios</strong></td><td><strong>60%</strong></td><td>54%</td><td>6%</td></tr>
-            </tbody>
-          </table>
-          <div class="topic-title" style="margin-top:14px">Vedações importantes</div>
-          <ul>
-            <li>Nos <strong>180 dias antes do fim do mandato:</strong> proibido aumento de gastos com pessoal</li>
-            <li><strong>Proibido conceder benefícios fiscais</strong> sem compensação de receita</li>
-            <li>Relatórios obrigatórios: <strong>RREO</strong> (bimestral) e <strong>RGF</strong> (quadrimestral para municípios &lt; 50 mil hab.)</li>
-          </ul>
-        </div>
-      </div></div>
-    </div>
-
-    <div class="acc">
-      <div class="acc-head"><span class="chev">▼</span><h3>Desenvolvimento e Gestão Organizacional</h3><span class="badge">cobrado</span></div>
-      <div class="acc-body"><div class="acc-content">
-        <div class="content-block">
-          <div class="topic-title">Planejamento estratégico</div>
-          <ul>
-            <li><strong>Missão:</strong> razão de ser da organização</li>
-            <li><strong>Visão:</strong> onde a organização quer chegar</li>
-            <li><strong>Valores:</strong> princípios que guiam as ações</li>
-            <li><strong>Objetivos estratégicos:</strong> resultados de longo prazo a serem alcançados</li>
-            <li><strong>SWOT/FOFA:</strong> análise de Forças, Oportunidades, Fraquezas, Ameaças</li>
-          </ul>
-          <div class="topic-title" style="margin-top:14px">Estrutura organizacional</div>
-          <ul>
-            <li><strong>Organograma:</strong> representação gráfica da hierarquia e relações formais</li>
-            <li><strong>Manuais administrativos:</strong> de organização, de procedimentos, de normas e políticas</li>
-            <li><strong>Formulários:</strong> instrumentos de coleta e registro padronizado de dados</li>
-          </ul>
-          <div class="topic-title" style="margin-top:14px">Governança e avaliação</div>
-          <ul>
-            <li><strong>Governança corporativa pública:</strong> conjunto de mecanismos para assegurar que a AP seja exercida no interesse da sociedade (accountability, transparência, equidade)</li>
-            <li><strong>Indicadores de desempenho:</strong> medem eficiência (meios), eficácia (resultados) e efetividade (impacto)</li>
-            <li><strong>Auditoria de resultados:</strong> verifica se os objetivos estratégicos foram atingidos</li>
-          </ul>
-        </div>
-      </div></div>
-    </div>
 
   </div><!-- /tab-ce -->
 

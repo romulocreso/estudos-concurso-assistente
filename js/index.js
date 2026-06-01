@@ -1,14 +1,9 @@
 /* ---------------- DATA ---------------- */
 const DISCIPLINES = [
   { id:"port", name:"Português", abbr:"Português", groups:[
-    { g:"Fonética & Ortografia", items:[
-      "Dígrafos e divisão silábica",
-      "Ortografia: conceitos, alfabeto e orientações ortográficas",
-    ]},
-    { g:"Acentuação", items:[
-      "Acentuação tônica e gráfica; os acentos",
-      "Regras básicas e especiais; hiatos e ditongos",
-      "Formas verbais com pronomes; acentos diferenciais",
+    { g:"Ortografia", items:[
+      "Conceitos básicos; o alfabeto; orientações ortográficas",
+      "Emprego de S/Z, X/CH, SS/Ç e demais casos",
     ]},
     { g:"Morfologia", items:[
       "Estrutura e formação das palavras; derivação e composição",
@@ -18,7 +13,7 @@ const DISCIPLINES = [
     { g:"Sintaxe", items:[
       "Termos essenciais, integrantes e acessórios da oração",
       "Período simples e composto",
-      "Concordância, regência e crase",
+      "Sintaxe de concordância e de regência",
       "Colocação pronominal; empregos de \u201cque\u201d e \u201cse\u201d",
       "Sinais de pontuação",
     ]},
@@ -26,13 +21,37 @@ const DISCIPLINES = [
       "Uso do hífen e da crase",
       "Interpretação e análise de textos",
       "Tipos de comunicação (descrição, narração, dissertação) e de discurso",
-      "Qualidades e defeitos do texto; coesão textual",
+      "Qualidades e defeitos do texto; coerência e coesão textual",
     ]},
     { g:"Estilística & semântica", items:[
       "Figuras de linguagem; denotação e conotação",
       "Vícios de linguagem; variedades linguísticas; funções da linguagem",
       "Texto e discurso: intertextualidade, paráfrase, paródia, plágio, citação",
       "Semântica: hiponímia/hiperonímia, polissemia, ambiguidade",
+    ]},
+  ]},
+  { id:"mat", name:"Matemática", abbr:"Matemática", groups:[
+    { g:"Números & álgebra", items:[
+      "Conjuntos e conjuntos numéricos",
+      "Equação e inequação do 1º grau; sistemas do 1º grau",
+      "Equação e inequação do 2º grau",
+      "Potenciação, radiciação e operações com radicais; polinômios",
+    ]},
+    { g:"Funções & sequências", items:[
+      "Relação e funções; função do 1º e do 2º graus",
+      "Função polinomial, exponencial e logarítmica",
+      "Progressão aritmética (PA) e progressão geométrica (PG)",
+    ]},
+    { g:"Trigonometria & geometria", items:[
+      "Trigonometria no triângulo retângulo",
+      "Circunferência; seno, cosseno e tangente de um arco",
+      "Geometria plana: triângulos e proporcionalidade; áreas",
+    ]},
+    { g:"Matemática aplicada", items:[
+      "Porcentagem; lucro e prejuízo; acréscimos e descontos",
+      "Juros simples e juros compostos",
+      "Noções básicas de estatística",
+      "Probabilidade",
     ]},
   ]},
   { id:"cg", name:"Conhecimentos Gerais", abbr:"Conh. Gerais", groups:[
@@ -48,43 +67,30 @@ const DISCIPLINES = [
     ]},
   ]},
   { id:"ce", name:"Conhecimentos Específicos", abbr:"Conh. Específicos", groups:[
-    { g:"Administração Pública", items:[
-      "Atividade administrativa; conceito, natureza e fins da Administração",
-      "Princípios básicos da Administração",
-      "Poderes e deveres do administrador; uso e abuso do poder",
-      "Poderes administrativos",
-      "Atos administrativos",
-      "Administração e utilização dos bens públicos",
+    { g:"Protocolo, expedição & arquivo", items:[
+      "Serviços e rotinas de protocolo e expedição",
+      "Arquivo: gestão documental e ciclo de vida (corrente, intermediário, permanente)",
+      "Classificação de documentos e correspondências; tabela de temporalidade",
     ]},
-    { g:"Contratos & licitações", items:[
-      "Contratos administrativos: considerações, formalização e execução",
-      "Inexecução, revisão e rescisão do contrato",
-      "Principais contratos administrativos",
-      "Modalidades de licitação; sanções penais; pregão",
+    { g:"Documentos & correspondência oficial", items:[
+      "Correspondência oficial: ofício, memorando, requerimento",
+      "Princípios da redação oficial (clareza, impessoalidade, formalidade, padrão culto)",
+      "Formas de tratamento e endereçamento",
     ]},
-    { g:"Administração de RH", items:[
-      "Sistema de RH: conceito, objetivos, administração e padronização",
-      "Avaliação de cargos: atribuições, requisitos, fatores e métodos",
-      "Recrutamento: conceito, etapas e fontes",
-      "Seleção: ficha profissiográfica, testes e entrevistas",
-      "Treinamento: necessidades, planejamento e avaliação de resultados",
-      "Planejamento de carreira e avaliação de desempenho",
+    { g:"Processos & material", items:[
+      "Processos administrativos: formação, autuação e tramitação",
+      "Gestão de material e controle de estoques e almoxarifado",
     ]},
-    { g:"Organização", items:[
-      "Desenvolvimento organizacional; processo organizador (conceito e fases)",
-      "Análise estrutural e funcional",
-      "Formulários e manuais",
+    { g:"Organização & atendimento", items:[
+      "Organização administrativa dos serviços públicos",
+      "Qualidade no atendimento ao público",
+      "Imagem da instituição e profissional; sigilo e postura; ética",
     ]},
-    { g:"Finanças públicas & orçamento", items:[
-      "Conceitos básicos; teoria das finanças; funções do Estado; bens públicos",
-      "Orçamento público: conceito e princípios orçamentários",
-      "Plano Plurianual (PPA) e Lei de Diretrizes Orçamentárias (LDO)",
-      "Classificação e conceituação da receita orçamentária brasileira",
-      "Lei de Responsabilidade Fiscal: princípios, limites de pessoal e dívida",
-    ]},
-    { g:"Gestão estratégica", items:[
-      "Desempenho organizacional; governança corporativa e liderança estratégica",
-      "Auditoria de resultados e avaliação estratégica",
+    { g:"Noções de informática", items:[
+      "Conceitos básicos de hardware e software; ambiente Windows 10",
+      "Editor de texto MS Word; planilhas MS Excel",
+      "Internet e intranet; navegadores; correio eletrônico (webmail)",
+      "Cópias de segurança (backup); organização de arquivos e pastas",
     ]},
   ]},
 ];
@@ -111,7 +117,7 @@ const TIMELINE = [
 /* keys for past-date detection (end date) */
 const TL_DATES = ["2026-03-16","2026-03-19","2026-07-14","2026-06-19","2026-06-26","2026-07-01","2026-07-14","2026-07-21","2026-07-24","2026-07-31","2026-08-16","2026-08-17","2026-08-20","2026-09-08","2026-09-11","2026-09-18"];
 
-const STORE_KEY = "analista_legislativo_progress";
+const STORE_KEY = "assistente_administrativo_progress";
 let state = {};
 
 /* ---------------- BUILD ---------------- */
