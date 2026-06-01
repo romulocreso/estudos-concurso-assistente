@@ -1,0 +1,43 @@
+/* HEADER */
+header{padding:54px 0 30px;border-bottom:3px double var(--oxblood);margin-bottom:36px}
+.kicker{font-family:'Spline Sans Mono',monospace;font-size:12.5px;letter-spacing:.32em;text-transform:uppercase;color:var(--oxblood);font-weight:600}
+h1{font-family:'Fraunces',serif;font-weight:900;font-size:clamp(2rem,5vw,3.2rem);line-height:.98;letter-spacing:-.02em;margin:.2em 0 .15em;color:var(--ink)}
+h1 em{font-style:italic;color:var(--oxblood);font-weight:500}
+.sub{font-size:15px;color:var(--ink-soft);max-width:60ch}
+
+/* TABS */
+.tabs{display:flex;gap:4px;margin-bottom:28px;border-bottom:2px solid var(--line);padding-bottom:0}
+.tab-btn{font-family:'Spline Sans Mono',monospace;font-size:12px;letter-spacing:.1em;text-transform:uppercase;padding:10px 18px;border:none;background:transparent;cursor:pointer;color:var(--ink-soft);border-bottom:3px solid transparent;margin-bottom:-2px;transition:all .18s}
+.tab-btn.active,.tab-btn:hover{color:var(--oxblood)}
+.tab-btn.active{border-bottom-color:var(--oxblood);font-weight:600}
+.tab-panel{display:none}
+.tab-panel.active{display:block}
+
+/* ACCORDION */
+.acc{border:1px solid var(--line);border-radius:6px;overflow:hidden;margin-bottom:16px;background:rgba(255,253,247,.55)}
+.acc-head{display:flex;align-items:center;gap:14px;padding:14px 20px;cursor:pointer;user-select:none;background:rgba(234,221,198,.45);transition:background .2s}
+.acc-head:hover{background:rgba(234,221,198,.85)}
+.acc-head .chev{color:var(--oxblood);font-size:13px;transition:transform .25s}
+.acc.open .chev{transform:none}
+.acc:not(.open) .chev{transform:rotate(-90deg)}
+.acc-head h3{font-family:'Fraunces',serif;font-size:1.15rem;font-weight:600;flex:1;color:var(--ink)}
+.acc-head .badge{font-family:'Spline Sans Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold)}
+.acc-body{max-height:0;overflow:hidden;transition:max-height .35s ease}
+.acc.open .acc-body{max-height:8000px}
+.acc-content{padding:18px 22px 20px}
+
+/* CONTENT STYLES */
+.topic-section{margin-bottom:22px}
+.topic-title{font-family:'Spline Sans Mono',monospace;font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:10px;padding-bottom:5px;border-bottom:1px dashed var(--line)}
+.content-block{margin-bottom:16px}
+.content-block p{font-size:14.5px;color:var(--ink);margin-bottom:8px;line-height:1.65}
+.content-block ul,.content-block ol{padding-left:20px;margin-bottom:8px}
+.content-block li{font-size:14px;color:var(--ink);margin-bottom:5px;line-height:1.6}
+.content-block li strong{color:var(--oxblood)}
+.content-block .note{background:rgba(169,118,47,.1);border-left:3px solid var(--gold);padding:10px 14px;border-radius:0 4px 4px 0;font-size:13.5px;color:var(--ink-soft);margin:10px 0}
+.content-block .alert{background:rgba(110,31,37,.07);border-left:3px solid var(--oxblood);padding:10px 14px;border-radius:0 4px 4px 0;font-size:13.5px;color:var(--ink);margin:10px 0}
+.content-block .alert strong{color:var(--oxblood)}
+table.mat{width:100%;border-collapse:collapse;font-size:13.5px;margin:12px 0}
+table.mat th{background:var(--oxblood);color:#f6ecd8;font-family:'Spline Sans Mono',monospace;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;padding:9px 12px;text-align:left}
+table.mat td{padding:9px 12px;border-top:1px solid var(--line);vertical-align:top}
+table.mat tr:nth-child(even) td{background:rgba(234,221,198,.3)}
